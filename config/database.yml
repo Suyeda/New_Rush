@@ -23,7 +23,12 @@ default: &default
 
 development:
   <<: *default
+  adapter: postgresql
+  encoding: unicode
   database: New_Rush_development
+  pool: 5
+  username: ubuntu
+  password:
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +62,12 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
+  adapter: postgresql
+  encoding: unicode
   database: New_Rush_test
+  pool: 5
+  username: ubuntu
+  password:
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +90,9 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
+  encoding: unicode
   database: New_Rush_production
-  username: New_Rush
-  password: <%= ENV['NEW_RUSH_DATABASE_PASSWORD'] %>
+  pool: 5
+  username: ubuntu
+  password:
