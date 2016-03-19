@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sean James Suyeda</title>
+
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    SJS
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#education">Education</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <header class="intro">
+      <div class="logo_box">
+
+        <div class="back-bird">
+        </div>
+        <div class="logo">
+        </div>
+        <div class="fore-bird">
+        </div>
+
+      </div>
+
+
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <h2 class="category">About</h2>
+              <hr>
+                <p>My name is Sean and here is a little about me.  I grew up in a not so typical family where games were not seen as a waste of time but rather immersive worlds to explore.  My entire family played games which allowed me to experience brilliant creations and solve problems at a young age.  In college I stumbled into coding with my first programming language, Ruby.  I found coding riddled with puzzles just aching to be solved. Naturally I was lured to solve these problems just as in the video games that built up the world around me. Eventually I had an epiphany about coding, I could solve algorithms but I didn't know how pieces connected to build anything. Thus I attended a web development bootcamp to learn how applications are put together from scratch. I've been learning web development now for over 1100+ hours and I don't believe the learning will ever end nor cease to interest me.</p>
+              <hr>
+            </div>
+        </div>
+    </section>
+
+    <div class="content">
+      <article>
+      <div class="large-window">
+      </article>
+    </div>
+
+    <!-- Education Section -->
+    <section id="education" class="content-section text-center">
+        <div class="education-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2 class="category">Education</h2>
+                    <hr>
+
+                    <i class="fa fa-4x fa fa-university" style="visibility: visible; animation-name: bounceIn;"></i>
+                    <h3>2012-2015</h3>
+                    <hr class="light">
+
+                    <p class="desc">Graduated from the University of California, Davis with a Bachelor of Arts degree in Communication and minor in Economics.  Joined the League of Legends club and placed third in their 5v5 division and first in their 1v1 tournament.</p>
+
+                    <i class="fa fa-4x fa fa-gamepad" style="visibility: visible; animation-name: bounceIn;"></i>
+                    <h3>2014</h3>
+                    <hr class="light">
+                    <p class="desc">Worked at LVL6, a social mobile gaming startup with 2 titles on the iOS App Store, Age of Chaos and Mercenary Inc. As a Quality Assurance Analyst, I created new functional tests for the mobile games. Analyzed overall gameplay, design, mechanics, reliability, stability, and performance before patches went live. Managed special events in existing game and received player feedback.</p>
+
+                    <i class="fa fa-4x fa fa-graduation-cap" style="visibility: visible; animation-name: bounceIn;"></i>
+                    <h3>2015</h3>
+                    <hr class="light">
+                    <p class="desc">Attended a full-time coding bootcamp where I learned three different stacks over the course of 3 months. Built strong fundamental knowledge, worked on various fully functional projects, and completed daily algorithm challenges. There I built awesome projects that gave me hands on experience as a developer, and one even won a Hackathon (Rush Read) See Below!</p>
+                    <p>MongoDB, Express.JS, Angular, Node.JS</p>
+                    <p>Linux, AJAX, MySQL, PHP</p>
+                    <p>Ruby on Rails</p>
+
+
+                    <i class="fa fa-4x fa fa-gift wow bounceIn white" style="visibility: visible; animation-name: bounceIn;"></i>
+                    <h3>Present</h3>
+                    <hr class="light">
+                    <p class="desc">Thank you for visiting my personal website. I love developing and will always continue learning whether it is in my free time or working. Hopefully some of my projects will catch your eye. And hopefully we can work together someday and build something incredible.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="container content-section text-center">
+        <div class="row">
+              <h2 class="category">Portfolio</h2>
+              <hr>
+
+              <div class="post1">
+                <div class="portfolio-box">
+                  <div class="box1">
+                    <%= link_to image_tag('rushread', :class => 'img-responsive'), "http://www.rushread.com" %>
+                  </div>
+                  <div class="box2">
+                    <h5>Rush Read</h5>
+                    <hr>
+                    <p>Rush Read, an interactive app that improves reading speed and comprehension. Includes personal profiles to track reading achievements/awards and graphs to measure progress.</p>
+                    <%= link_to "MEAN Stack", "http://rushread.com", :target => "_blank", class: "stack-m" %>
+                  </div>
+                </div>
+              </div>
+
+              <div class="post2">
+                <div class="portfolio-box">
+                  <div class="box1">
+                    <h5>Wanna Bet</h5>
+                    <hr>
+                    <p>Wanna Bet, was created when ping pong gents wanted to hold wagers but had no place to keep track. Create teams, manage players, compete for points to be the top on the leaderboard.</p>
+                    <%= link_to "LAMP Stack", "http://wannabet-s3.com", :target => "_blank", class: "stack-l" %>
+                  </div>
+                  <div class="box2">
+                    <%= link_to image_tag('wannabet', :class => 'img-responsive'), "http://www.wannabet-s3.com" %>
+                  </div>
+                </div>
+              </div>
+
+              <div class="post3">
+                <div class="portfolio-box">
+                  <div class="box1">
+                    <%= link_to image_tag('mitrihair', :class => 'img-responsive'), "http://www.mitrihair.com" %>
+                  </div>
+                  <div class="box2">
+                    <h5>Mitri Studio</h5>
+                    <hr>
+                    <p>Mitri Studio, a hair stylist website that provides clients with an exceptional, experienced, and passionate professional.</p>
+                    <%= link_to "Ruby on Rails", "http://mitrihair.com", :target => "_blank", class: "stack-r" %>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section text-center">
+        <div class="contact-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2 class="category">Contact</h2>
+                    <hr>
+                    <h3>Let's Get In Touch!</h3>
+                    <p>For General or Resume Inquiries</p>
+                    <div class="contact-box1">
+                      <i class="fa fa-phone fa-3x"></i>
+                      <p>(408)832-1258</p>
+                    </div>
+                    <div class="contact-box2">
+                      <i class="fa fa-envelope-o fa-3x"></i>
+                      <p>seansuyeda@gmail.com</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+  </body>
+
+  </html>
